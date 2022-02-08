@@ -1,4 +1,4 @@
-name: Npm publish
+name: NPM publish
 
 on:
   workflow_dispatch:
@@ -11,8 +11,9 @@ jobs:
       - run: yarn install
       - run: npm run lint
       - run: npm run build
+      - run: npm run dist
 
-  publish-site:
+  publish-package:
     needs: build
     runs-on: ubuntu-latest
     steps:
