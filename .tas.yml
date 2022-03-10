@@ -9,7 +9,7 @@ preRun:
 
 postMerge:
   pattern:
-    - "**/*-spec.ts"
+    - "/tests/.*-spec\\.ts?$"
   # strategy for trigerring builds for post-merge
   strategy:
     threshold: 1
@@ -17,7 +17,7 @@ postMerge:
 
 preMerge:
   pattern:
-    - "**/*-spec.ts"
+    - "/tests/.*-spec\\.ts?$"
 
 config: package.json
 
