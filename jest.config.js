@@ -9,7 +9,7 @@ module.exports={
       "!**/node_modules/**",
       "!**/vendor/**"
     ],
-    "testRegex": "/tests/.*-spec\\.ts?$",
+    "testRegex": "tests/.*/*-spec.ts",
     "moduleFileExtensions": [
       "ts",
       "js",
